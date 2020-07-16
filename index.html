@@ -1,854 +1,256 @@
-<!DOCTYPE html>
-
-
-
-
-<html class="theme-next pisces" lang="zh-Hans">
+﻿﻿<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="pizhen">
-<meta property="og:type" content="website">
-<meta property="og:title" content="皮振">
-<meta property="og:url" content="https://pkapi.github.io/pizhen.github.io/index.html">
-<meta property="og:site_name" content="皮振">
-<meta property="og:description" content="pizhen">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="皮振">
-<meta name="twitter:description" content="pizhen">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    version: '5.0.1',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    tabs: ,
-    motion: "",
-    duoshuo: {
-      userId: 'undefined',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: "",
-      labels: ""
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="https://pkapi.github.io/pizhen.github.io/"/>
-
-
-
-
-
-  <title>皮振</title>
-  
-
-
-
-
-
-
-
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+    <title>不才才 bucaicai</title>
+    <meta name="description" content="前端开发者">
+    <meta name="keywords" content="javascript,nodejs,个人博客，微信小程序，博客">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">
+    <script type="text/javascript">
+        if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
+            alert('朋友，上古浏览器不支持呢~');
+        }
+    </script>
 </head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">皮振</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle">pizhen's Blog</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-message">
-          <a href="/message" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            message
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pkapi.github.io/pizhen.github.io/2017/09/09/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="pizhen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/0.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="皮振">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/09/09/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-More info: Writing
-Run server1$ hexo server
-More info: Server
-Generate static files1$ hexo generate
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-More info: Deployment
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/09/09/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://pkapi.github.io/pizhen.github.io/2016/10/03/blogs/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="pizhen">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/0.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="皮振">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/10/03/blogs/" itemprop="url">Hexo之NexT主题搭建博客详细过程</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          我是一个孤儿，也许是重男轻女的结果，也许是男欢女爱又不能负责的产物。  
-　　是哲野把我拣回家的。  
-　　那年他落实政策自农村回城，在车站的垃圾堆边看见了我，一个漂亮的，安静的小女婴，许多人围着，他上前，那女婴对他璨然一笑。  
-他给了我一个家，还给了我一个美丽的名字，陶夭。后来他说，我当初那一笑，称得起桃之夭夭，灼灼其华。  
-　　哲野的一生极其悲凄，他的父母都是归国的学者，却没有逃过那场文化浩劫，愤懑中双双弃世，哲野自然也不能幸免，发配农村，和相恋多年的女友劳燕分飞。他从此孑然一身，直到35岁回城时拣到我。  
-　　我管哲野叫叔叔。  
-　　童年在我的记忆里并没有太多不愉快。只除掉一件事。  
-　　上学时，班上有几个调皮的男同学骂我“野种”，我哭着回家，告诉哲野。第二天哲野特意接我放学，问那几个男生：谁说她是野种的？小男生一见高大魁梧的哲野，都不敢出声，哲野冷笑：下次谁再这么说，让我听见的话，我揍扁他！有人嘀咕，她又不是你生的，就是野种。哲野牵着我的手回头笑：可是我比亲生女儿还宝贝她。不信哪个站出来给我看看，谁的衣服有她的漂亮？谁的鞋子书包比她的好看？她每天早上喝牛奶吃面包，你们吃什么？小孩子们顿时气馁。  
-　　自此，再没有人骂我过是野种。大了以后，想起这事，我总是失笑。  
-　　我的生活较之一般孤儿，要幸运得多。  
-　　我最喜欢的地方是书房。满屋子的书，明亮的大窗子下是哲野的书桌，有太阳的时候，他专注工作的轩昂侧影似一副逆光的画。我总是自己找书看，找到了就窝在*上。隔一会，哲野会回头看我一眼，他的微笑，比冬日窗外的阳光更和煦。看累了，我就趴在他肩上，静静的看他画图撰文。  
-　　他笑：长大了也做我这行？  
-　　我撇嘴：才不要，晒得那么黑，脏也脏死了。  
-　　啊，我忘了说，哲野是个建筑工程师。但风吹日晒一点也无损他的外表。他永远温雅整洁，风度翩翩。  
-　　断断续续的，不是没有女人想进入哲野的生活。  
-　　我八岁的时候，曾经有一次，哲野差点要和一个女人谈婚论嫁。那女人是老师，精明而漂亮。不知道为什么我不喜欢她，总觉得她那脸上的笑象贴上去的，哲野在，她对我笑得又甜又温柔，不在，那笑就变戏法似的不见。我怕她。有天我在阳台上看图画书，她问我：你的亲爹妈呢？一次也没来看过你？我呆了，望着她不知道说什么好。她啧啧了两声，又说，这孩子，傻，难怪他们不要你。我怔住，忽然哲野铁青着脸走过来，牵起我的手什么也不说就回房间。  
-　　晚上我一个人闷在被子里哭。哲野走进来，抱着我说，不怕，夭夭不哭。  
-　　后来就不再见那女的上我们家来了。  
-　　再后来我听见哲野的好朋友邱非问他，怎么好好的又散了？哲野说，这女人心不正，娶了她，夭夭以后不会有好日子过的。邱非说，你还是忘不了叶兰。八岁的我牢牢记住了这个名字。大了后我知道，叶兰就是哲野当年的女朋友。  
-　　我们一直相依为命。哲野把一切都处理得很好，包括让我顺利健康的度过青春期。  
-　　我考上大学后，因学校离家很远，就住校，周末才回家。  
-　　哲野有时会问我：有男朋友了吗？我总是笑笑不作声。学校里倒是有几个还算出色的男生总喜欢围着我转，但我一个也看不顺眼：甲倒是高大英俊，无奈成绩三流；乙功课不错，口才也甚佳，但外表实在普通；丙功课相貌都好，气质却似个莽夫……  
-　　我很少和男同学说话。在我眼里，他们都幼稚肤浅，一在人前就来不及的想把最好的一面表现出来，太着痕迹，失之稳重。  
-　　二十岁生日那天，哲野送我的礼物是一枚红宝石的戒指。这类零星首饰，哲野早就开始帮我买了，他的说法是：女孩子大了，需要有几件象样的东西装饰。吃完饭他陪我逛商场，我喜欢什么，马上买下。  
-　　回校后，敏感的我发现同学们喜欢在背后议论我。我也不放在心上。因为自己的身世，已经习惯人家议论了。直到有天一个要好的女同学私下把我拉住：他们说你有个年纪比你大好多的男朋友？我莫名其妙：谁说的？她说：据说有好几个人看见的，你跟他逛商场，亲热得很呢！说你难怪看不上这些穷小子了，原来是傍了孔方兄！我略一思索，脸慢慢红起来，过一会笑道：他们误会了。  
-　　我并没有解释。静静的坐着看书，脸上的热久久不褪。  
-　　周末回家，照例大扫除。哲野的房间很干净，他常穿的一件羊毛衫搭在床沿上。那是件米咖啡色的，樽领，买的时候原本看中的是件灰色鸡心领的，我挑了这件。当时哲野笑着说，好，就依你，看来小夭夭是嫌我老了，要我打扮得年轻点呢。  
-　　我慢慢叠着那件衣服，微笑着想一些零碎的琐事。  
-　　接下来的一段时间我发现哲野的精神状态非常好，走路步履轻捷生风，偶尔还听见他哼一些歌，倒有点象当年我考上大学时的样子。我纳闷。  
-　　星期五我就接到哲野电话，要我早点回家，出去和他一起吃晚饭。  
-　　他刮胡子换衣服。我狐疑：有人帮你介绍女朋友？
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2016/10/03/blogs/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          
-            <img class="site-author-image" itemprop="image"
-              src="/images/0.png"
-              alt="pizhen" />
-          
-            <p class="site-author-name" itemprop="name">pizhen</p>
-            <p class="site-description motion-element" itemprop="description">pizhen</p>
-        </div>
-
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-            
-              <a href="/archives">
-            
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
+<body>
+<div id="body-wrap">
+    <nav class="not_index_bg" id="nav" style="background-image:url(https://api.ixiaowai.cn/api/api.php)">
+        <div id="page_site-info">
+            <div id="site-title">
+                <span class="blogtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed(".blogtitle", {
+                        strings: ['求知若饥，虚心若愚','Stay Hungry Stay Foolish'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
             </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/PKaPI" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-globe"></i>GitHub</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com" target="_blank" title="微博">
-                  
-                    <i class="fa fa-fw fa-globe"></i>微博</a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com" target="_blank" title="知乎">
-                  
-                    <i class="fa fa-fw fa-globe"></i>知乎</a>
-              </span>
-            
-          
         </div>
+    </nav>
+    <main id="content-outer">
+        <div class="layout_page" id="content-inner">
+            <div class="aside_content" id="aside_content">
+                <div class="card-widget card-info">
+                    <div class="card-content">
+                        <div class="card-info-avatar is-center">
+                            <img class="avatar-img" src="https://cdn.jsdelivr.net/gh/laoxuai/images/image/20200125221102.png" alt="avatar">
+                            <div class="author-info__name">皮振</div>
+                            <div class="author-info__description">90后青年，前端开发者</div>
+                        </div>
+                        <div class="card-info-social-icons is-center">
+                            <a class="social-icon" href="https://github.com/laoxuai" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a class="social-icon" href="mailto:878006658@qq.com" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+								
+                <div class="card-widget card-announcement">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                            <span>一言</span>
+                        </div>
+                        <div id="hitokoto"></div>
+                    </div>
+                </div>
+                <div class="card-widget card-announcement">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span>今日诗词</span>
+                        </div>
+                        <div id="jinrishici-sentence"></div>
+                    </div>
+                </div>
 
-        
-        
-
-        
-        
-          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-            <div class="links-of-blogroll-title">
-              <i class="fa  fa-fw fa-link"></i>
-              友情链接
+                <div class="card-widget card-webinfo">
+                    <div class="card-content">
+                        <div class="item-headline">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            <span>站点信息</span>
+                        </div>
+                        <div class="webinfo">
+                            <div class="webinfo-item">
+                                <div class="webinfo-site-uv-name">本站访客数 :</div>
+                                <div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div>
+                            </div>
+                            <div class="webinfo-item">
+                                <div class="webinfo-site-name">本站总访问量 :</div>
+                                <div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="links-of-blogroll-list">
-              
-                <li class="links-of-blogroll-item">
-                  <a href="http://yisu.ren/index.php/" title="一俗人" target="_blank">一俗人</a>
-                </li>
-              
-            </ul>
-          </div>
-        
+            <article id="page">
+                <div class="article-container">
+                    <h2>听听音乐</h2>
+                    <meting-js
+                            server="netease"
+                            type="playlist"
+                            id="2181637930"
+                            mutex="true">
+                    </meting-js>
+                    <hr>
+                    
+					<h2>技能属性</h2>
+					<div class="skillbox">
+						<div class="skillbar">
+							<div class="skillbar-title" style="background: linear-gradient(to right, #FF0066 0%, #FF00CC 100%); width: 75%">
+								<span>javascript</span>
+							</div>
+							<div class="skill-bar-percent">100%</div>
+						</div>
+						<div class="skillbar">
+							<div class="skillbar-title" style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 40%">
+								<span>前端</span>
+							</div>
+							<div class="skill-bar-percent">80%</div>
+						</div>
+						<div class="skillbar">
+							<div class="skillbar-title" style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 60%">
+								<span>react</span>
+							</div>
+							<div class="skill-bar-percent">80%</div>
+						</div>
+						<div class="skillbar">
+							<div class="skillbar-title" style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 70%">
+								<span>vue</span>
+							</div>
+							<div class="skill-bar-percent">70%</div>
+						</div>
+						<div class="skillbar">
+							<div class="skillbar-title" style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 60%">
+								<span>css</span>
+							</div>
+							<div class="skill-bar-percent">90%</div>
+						</div>
+						<div class="skillbar">
+							<div class="skillbar-title" style="background: linear-gradient(to right, #FFEB3B 0%, #FFF176 100%); width: 75%">
+								<span>html</span>
+							</div>
+							<div class="skill-bar-percent">90%</div>
+						</div>
+					</div>
 
-        
-
-
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
+                    <hr>
+					<h2>刷题</h2>
+                    <div class="tool">
+                        <a href="https://leetcode-cn.com/problemset/all/" target="_blank">Leetcode</a><br>
+						<a href="https://www.nowcoder.com/ta/coding-interviews" target="_blank">剑指 Offer</a>				
+                    </div>
+					
+					<hr>
+                    <h2>工具</h2>
+                    <div class="tool">
+                        <a href="https://mdnice.com/" target="_blank">Markdown Nice</a><br>					
+                    </div>
+                </div>
+            </article>
+         </div>
     </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">pizhen</span>
-
-  
-</div>
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
+    <footer id="footer">
+        <div id="footer-wrap">
+            <div class="copyright">&copy;2019 - 2020 BY Bucaicai</div>
+        </div>
     </footer>
-
+</div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/instant.page@3.0.0/instantpage.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
+<!-- aplayer、meting -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!--   一言、今日诗词   -->
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<!--鼠标点击效果-->
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js"></script>
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-  </div>
-
-  
-
 <script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    console.clear();
+    console.log("%c 有朋自远方来, 不亦说乎.", "background:#24272A; color:#ffffff", "");
+    console.log("%c Github %c", "background:#24272A; color:#ffffff", "", "https://github.com/laoxuai");
+    console.log("%c 版本号: %c", "background:#24272A; color:#ffffff", "", "1.0.0");
+
+
+(function($){
+	$.fn.snow = function(options){
+	var $flake = $('<div id="snowbox" />').css({'position': 'absolute','z-index':'9999', 'top': '-50px'}).html('&#10052;'),
+	documentHeight 	= $(document).height(),
+	documentWidth	= $(document).width(),
+	defaults = {
+		minSize		: 10,
+		maxSize		: 20,
+		newOn		: 1000,
+		flakeColor	: "#AFDAEF" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
+	},
+	options	= $.extend({}, defaults, options);
+	var interval= setInterval( function(){
+	var startPositionLeft = Math.random() * documentWidth - 100,
+	startOpacity = 0.5 + Math.random(),
+	sizeFlake = options.minSize + Math.random() * options.maxSize,
+	endPositionTop = documentHeight - 200,
+	endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+	durationFall = documentHeight * 10 + Math.random() * 5000;
+	$flake.clone().appendTo('body').css({
+		left: startPositionLeft,
+		opacity: startOpacity,
+		'font-size': sizeFlake,
+		color: options.flakeColor
+	}).animate({
+		top: endPositionTop,
+		left: endPositionLeft,
+		opacity: 0.2
+	},durationFall,'linear',function(){
+		$(this).remove()
+	});
+	}, options.newOn);
+    };
+})(jQuery);
+$(function(){
+    $.fn.snow({ 
+	    minSize: 5, /* 定义雪花最小尺寸 */
+	    maxSize: 50,/* 定义雪花最大尺寸 */
+	    newOn: 800  /* 定义密集程度，数字越小越密集 */
+    });
+});
+
+// 浏览器搞笑标题
+var OriginTitle = document.title;
+var titleTime;
+document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+        // $('[rel="icon"]').attr('href', "/funny.ico");
+        document.title = '╭(°A°`)╮ 页面崩溃啦 ~';
+        clearTimeout(titleTime);
+    }
+    else {
+        $('[rel="icon"]').attr('href', "/favicon.ico");
+        document.title = '(ฅ>ω<*ฅ) 噫又好啦 ~' + OriginTitle;
+        titleTime = setTimeout(function () {
+            document.title = OriginTitle;
+        }, 2000);
+    }
+});
 </script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
-
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
 </body>
 </html>
